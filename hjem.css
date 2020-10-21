@@ -1,0 +1,32 @@
+/* forside */
+
+#front-info {
+    background: rgb(224, 224, 224);
+    padding: 30px;
+    margin: 200px 0;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+#front-info p {
+    margin: 10px 0 -5px 0;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+#harold {
+    margin: 100px 200px;
+    display: block;
+    width: 800px;
+    height: 600px;
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(media/hide_pain_harold.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
