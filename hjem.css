@@ -3,7 +3,7 @@
 #front-info {
     background: rgb(224, 224, 224);
     padding: 30px;
-    margin: 200px 0 0 0;
+    margin: 150px 0 0 0;
     border-radius: 10px;
     position: absolute;
     z-index: 2;
@@ -18,14 +18,15 @@
 }
 
 #harold {
-    margin: 100px 200px;
+    margin: 50px 200px;
     display: block;
     width: 760px;
     height: 600px;
     background: linear-gradient(
-                     rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5)),
-                     url(media/hide_pain_harold.jpg);
+                    90deg,
+                    rgba(45, 99, 98, 0.8) 40%, 
+                    rgba(0, 0, 0, 0.1) 100%),
+                    url(media/hide_pain_harold.jpg);
     background-size: cover;
     border-radius: 10px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
