@@ -3,10 +3,12 @@
     <head>
 		<meta charset="utf-8" />
 		<title>Sikkerhetskurs</title> 
-		<link rel="stylesheet" type="text/css" href="stil.css" />
-        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="stil.css" />
+        <link rel="stylesheet" type="text/css" href="kurs.css" />
+        <script src="kurs.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 	</head>
 	<body>
         <header>
@@ -20,8 +22,75 @@
             </nav>
         </header>
         <main>
-            <h1>Kurs</h1>
-            <p>start kurs!</p>
+            <div id="kurs">
+                    <div id="progressbarContainer">
+                        <div id="emptyProgressbar"></div>
+                        <div id="progress"></div>
+                        <ul id="progressbarList"></ul>
+                    </div>
+                    <div id="slide1" class="slide">
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/c9YVWyEcuuA"
+                            frameborder="0"
+                            allow="accelerometer;
+                                    autoplay; 
+                                    clipboard-write; 
+                                    encrypted-media; 
+                                    gyroscope; 
+                                    picture-in-picture"
+                            allowfullscreen
+                        >
+                        </iframe>
+                    </div>
+                    <div id="slide2" class="slide">
+                        <h2>Slide 2</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div id="slide3" class="slide">
+                        <h2>Slide 3</h2>
+                        <img width="500px" src="media/hide_pain_harold.jpg">
+                    </div>
+                    <div id="slide4" class="slide">
+                        <h2>Slide 4</h2>
+                    </div>
+                    <div id="slide5" class="slide">
+                        <h2>Slide 5</h2>
+                    </div>
+                    <div id="slide6" class="slide">
+                        <p>
+                            zup
+                        </p>
+                    </div>
+                    <div id="slide7" class="slide">
+                        <h2>Slide 7</h2>
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/c9YVWyEcuuA"
+                            frameborder="0"
+                            allow="accelerometer;
+                                    autoplay; 
+                                    clipboard-write; 
+                                    encrypted-media; 
+                                    gyroscope; 
+                                    picture-in-picture"
+                            allowfullscreen
+                        >
+                        </iframe>
+                    </div>
+                    <button id="prev" onclick="prevSlide()"><</button>
+                    <button id="next" onclick="nextSlide()">></button>
+            </div>
         </main>
         <footer>&copy; 2020 Cyberlaget</footer>
     </body>
