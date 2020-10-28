@@ -24,7 +24,7 @@
     height: 600px;
     background: linear-gradient(
                     90deg,
-                    rgba(45, 99, 98, 0.8) 40%, 
+                    rgba(45, 99, 98, 0.8) 40%,
                     rgba(0, 0, 0, 0.1) 100%),
                     url(media/hide_pain_harold.jpg);
     background-size: cover;
@@ -43,6 +43,7 @@
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
     background: rgba(0, 0, 0, 0.3);
     transition: .3s;
+    cursor: pointer;
 }
 
 #start-button:hover {
