@@ -86,3 +86,31 @@
     display: none;
     min-height: 400px;
 }
+
+
+
+
+#starten{
+  padding: 10px;
+  width: 646px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+
+#last1{
+  position: relative;
+  margin-top: 50px;
+}
+
+#next1{
+  position: relative;
+  margin-top: 50px;
+  margin-left: 385px;
+}
+
+#ferdig{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: -300px;
+}
