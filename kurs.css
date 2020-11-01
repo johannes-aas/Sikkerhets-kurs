@@ -103,6 +103,15 @@
     height: 100%;
   }
 
+img {
+    max-width: 600px;
+    width: 100%;
+}
+
+p {
+    font-size: 20px;
+    line-height: 30px;
+}
 
 #starten{
   padding: 10px;
