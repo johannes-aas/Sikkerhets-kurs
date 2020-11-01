@@ -124,7 +124,7 @@ function nextSlide() {
 
 
 function prevSlide() {
-    if(user.currentSlide > 0) {
+    if(user.currentSlide > 1) {
         changeSlide(user.currentSlide, (user.currentSlide - 1));
     }
 }
