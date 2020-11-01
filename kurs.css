@@ -122,17 +122,12 @@ p {
 
 
 #last1{
-  position: relative;
+  position: absolute;
   margin-top: 50px;
 }
 
 #next1{
-  position: relative;
-  margin-top: 50px;
-  margin-left: 385px;
-}
-#neext1{
-  position: relative;
+  position: absolute;
   margin-top: 50px;
   margin-left: 485px;
 }
@@ -140,5 +135,5 @@ p {
 #ferdig{
   position: absolute;
   margin-top: 50px;
-  margin-left: 200px;
+  margin-left: 300px;
 }
