@@ -1,2 +1,2 @@
-# Sikkerhets-kurs
+# Sikkerhetskurs
 course for dummies
