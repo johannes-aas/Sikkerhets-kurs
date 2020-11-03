@@ -113,7 +113,7 @@ footer {
 }
 
 .whiteBox {
-    background: rgb(224, 224, 224);
+    background: rgb(224, 224, 224, 0.9);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
 }
@@ -124,3 +124,16 @@ footer {
     font-weight: bold;
 }
 
+
+
+/* text selection */
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #f85b1c;
+  }
+  
+  ::selection {
+    color: white;
+    background: #f85b1c;
+  }

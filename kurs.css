@@ -1,9 +1,9 @@
-#kurs {
-    padding: 20px;
-}
 
 #progressbarContainer {
     display: grid;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px 5px 0 0;
 }
 
 #emptyProgressbar {
@@ -53,6 +53,12 @@
     border-color: #f85b1c !important;
 }
 
+#controls {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 5px 5px;
+}
+
 #next, #prev {
     font-family: 'Righteous', cursive;
     width: 50px;
@@ -78,12 +84,6 @@
     border-color: #f85b1c;
 }
 
-.slide {
-    padding: 10px;
-    display: none;
-    min-height: 400px;
-}
-
 
 .video {
     position: relative;
@@ -103,14 +103,68 @@
     height: 100%;
   }
 
-img {
-    max-width: 600px;
+
+.slide {
+    font-size: 20px;
+    line-height: 30px;
+    display: none;
+    min-height: 400px;
+}
+
+.slide h2 {  
+    padding: 20px;
+}
+
+.slide p {
+    padding: 5px 20px;
+}
+
+#slide2 img {
+    display: block;
+    margin: auto;
+    max-width: 700px;
     width: 100%;
 }
 
-p {
+#slide3 img, #slide4 img {
+    max-width: 400px;
+    width: 100%;
+    float: right;
+    padding: 20px;
+}
+
+#slide6 img {
+    max-width: 550px;
+    width: 100%;
+    float: right;
+    padding: 20px;
+}
+
+.slide ul {
+    list-style: none;
     font-size: 20px;
-    line-height: 30px;
+    padding: 5px 20px 5px 50px;
+}
+
+.slide li {
+    padding: 5px 0;
+}
+
+.slide li::before {
+    font-family: 'Righteous';
+    content: "\003E";  /* unicode for ">" */
+    color: #f85b1c; 
+    font-weight: bold;
+    font-size: 25px;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 15px; /* Also needed for space (tweak if needed) */
+    margin-left: -20px; /* Also needed for space (tweak if needed) */
+  }
+
+
+
+#slide7 {
+    height: 500px;
 }
 
 #starten{
