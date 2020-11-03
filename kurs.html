@@ -23,7 +23,7 @@
             </nav>
         </header>
         <main>
-            <div id="kurs" class="whiteBox">
+            <div id="kurs">
                     <div id="progressbarContainer">
                         <div id="emptyProgressbar"></div>
                         <div id="progress"></div>
@@ -53,7 +53,7 @@
                             ukjent kilde, eller om noe som ikke du er kjent med, så er det måter du kan sjekke 
                             om emailen er falsk og prøver å “phishe” etter din informasjon.
                         </p>
-                        <ul>
+                        <ul class="ulS">
                             <li>
                                 Sjekk avsenderens email-adresse. Ofte vil disse være lange og utolkelige.
                             </li>
@@ -83,7 +83,7 @@
                             antiviruset som er lastet ned på pc´en som sier ifra eller så er det er det falskt. 
                             Måter du kan unngå å falle for slike meldinger er å ha sikkerhetsprinsipper for deg selv.
                         </p>
-                        <ul>
+                        <ul class="ulS">
                             <li>
                                 Vær kjent med ditt eget antivirus. Hvordan ser programmet ut? Hvordan fungerer det? Om du 
                                 vet dette er det mye lettere for deg å vite om en melding er falsk eller ikke.
@@ -121,7 +121,7 @@
                                 allowfullscreen>
                             </iframe>
                         </div>
-                        <ul>
+                        <ul class="ulS">
                             <li>
                                 Bedriftssikkerhet er viktig fordi bedrifter holder mye personlig og sensitiv informasjon. 
                                 Du som ansatt har tilgang til denne informasjonen og bør derfor holde deg trygg slik at 
@@ -153,96 +153,22 @@
                         </p>
                     </div>
                     <div id="slide7" class="slide">
-                        <h2>Quiz basert på det du har lært</h2>
-                        <div id="starten">
-                          <button id="knapp" onclick="startquiz()">Start Quiz</button>
-
-                          <div id="first" style=display:none>
-                            <br />
-                            <p>Spørsmål 1:<br />
-                        	Hvilke former vil en kriminell prøve å lure deg på?<br /><br />
-
-                            <input type = "radio" name = "quiz1"/> - Tillit, Ansvar og Frykt<br />
-                            <input type= "radio" name = "quiz1"/> - Ansvar, Kjærlighet og Fristelser</p><br />
-                            <input type = "radio" name = "quiz1" id="riktig1"  /> - Fristelser, Frykt og Tillit<br />
-                            <button id="next1" onclick="neste()">Neste Spørsmål</button>
-                          </div>
-                          <div id="second" style=display:none>
-                            <br />
-                            <p>Spørsmål 2:<br />
-                              Hva skal man se etter for å komme frem til at en email er falsk?<br /><br />
-
-                            <input type = "radio" name = "quiz2" id="riktig2"  /> - Avsenders email-adresse, Skrivefeil, Innhold og Bilder/Logoer<br />
-                            <input type = "radio" name = "quiz2"/> - Du trenger ikke sjekke, filteret på mailen fikser det<br />
-                            <input type= "radio" name = "quiz2"/> - Klikk på linken og log in på nettsiden for å sjekke</p>
-                            <input type= "radio" name = "quiz2"/> - Mail-adresser</p>
-                            <button id="last1" onclick="forrige()">Forrige Spørsmål</button>
-                            <button id="next1" onclick="neste()">Neste Spørsmål</button>
-                          </div>
-                          <div id="third" style=display:none>
-                            <br />
-                            <p>Spørsmål 3:<br />
-                        	Hva skal du gjøre dersom det kommer opp “Et virus er oppdaget på din pc.”<br /><br />
-
-
-                            <input type = "radio" name = "quiz3"/> - Klikk videre og last ned programmet du blir bedt om<br />
-                            <input type= "radio" name = "quiz3"/> - Skru av og på pcen</p><br />
-                            <input type = "radio" name = "quiz3" id="riktig3"  /> - Sjekke om det er fra din egen antivirus, om du er sikker på det kan du klikke videre.<br />
-                            <button id="last1" onclick="forrige()">Forrige Spørsmål</button>
-                            <button id="next1" onclick="neste()">Neste Spørsmål</button>
-                          </div>
-                          <div id="forth" style=display:none>
-                            <br />
-                            <p>Spørsmål 4:<br />
-                        Vinner du penger og premier av å surfe på nettet?<br /><br />
-                            <input type = "radio" name = "quiz4"/> - Ja<br /><br /><br />
-                            <input type = "radio" name = "quiz4" id="riktig4"  /> - Nei<br />
-                            <button id="last1" onclick="forrige()">Forrige Spørsmål</button>
-                            <button id="next1" onclick="neste()">Neste Spørsmål</button>
-                          </div>
-                          <div id="fifth" style=display:none>
-                            <br />
-                            <p>Spørsmål 5:<br />
-                        	Hva kan du gjøre for å holde bedriften trygg?<br /><br />
-
-                            <input type = "radio" name = "quiz5" id="riktig5"  /> - Bli oppmerksom på egen adferd på nettet, ikke laste ned ukjente programmer og følge sikkerhetsreglement<br />
-                            <input type = "radio" name = "quiz5"/> - Laste ned programmer på jobb-pcen for å holde deg trygg<br />
-                            <input type= "radio" name = "quiz5"/> - Ingenting, jeg har ikke ansvar for å holde bedriften trygg.</p>
-                            <button id="last1" onclick="forrige()">Forrige Spørsmål</button>
-                            <button id="next1" onclick="neste()">Neste Spørsmål</button>
-                          </div>
-                          <div id="sixth" style=display:none>
-                            <br />
-                            <p>Spørsmål 6:<br />
-                              Om du tror at du har blitt hacket, hva kan du gjøre?<br /><br />
-
-                            <input type = "radio" name = "quiz6" id="riktig6"  /> - Sjekke innloggingshistorikk, ta nødvendige tiltak (og varsle IT-ansvarlige dersom dette skjer på jobb)<br />
-                            <input type = "radio" name = "quiz6"/> - Ingenting, det er ikke noe jeg får gjort med det<br />
-                            <input type= "radio" name = "quiz6"/> - Varsle politiet, og få dem til å undersøke brukerene dine for å sjekke om du har blitt hacket.</p>
-                            <button id="last1" onclick="forrige()">Forrige Spørsmål</button>
-                            <button id="next1" onclick="neste()">Neste Spørsmål</button>
-                          </div>
-                          <div id="seventh" style=display:none>
-                            <br />
-                            <p>Spørsmål 7:<br />
-                        	Hvilke metoder er vanlige innenfor sosial manipulering?<br /><br />
-
-                            <input type = "radio" name = "quiz7"/> - Bruteforcing, Hacking, Spyware<br />
-                            <input type = "radio" name = "quiz7" id="riktig7"  /> - Phishing, Baiting og Malware<br />
-                            <input type= "radio" name = "quiz7"/> - Fishing, Cheating, Hacking</p><br />
-                            <button id="last1" onclick="forrige()">Forrige Spørsmål</button>
-                            <button id="ferdig" onclick="done()">Avslutt Quiz</button>
-                          </div>
-                          <div id="kake" style=display:none>
-                            <h2>Gratulerer du er ferdig</h2>
-                            <hr />
-                            <p id="parUt"></p>
-                          </div>
+                        <h2>Test hva du har lært!</h2>
+                        <div id='quiz'>
+                            <ul></ul>
                         </div>
+                        <div id="controlsQ">
+                            <button class="button" id="prevQ"><</button>
+                            <button id='start'>Prøv igjen</button>
+                            <button class="button" id="nextQ">></button>
+                        </div>
+                        </div>
+                        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+                        <script type='text/javascript' src='quiz.js'></script>
                     </div>
                 <div id="controls">
-                    <button id="prev" onclick="prevSlide()"><</button>
-                    <button id="next" onclick="nextSlide()">></button>
+                    <button class="button" id="prev" onclick="prevSlide()"><</button>
+                    <button class="button" id="next" onclick="nextSlide()">></button>
                 </div>
             </div>
         </main>

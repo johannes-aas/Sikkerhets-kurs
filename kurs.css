@@ -59,7 +59,7 @@
     border-radius: 0 0 5px 5px;
 }
 
-#next, #prev {
+.button {
     font-family: 'Righteous', cursive;
     width: 50px;
     height: 50px;
@@ -79,7 +79,7 @@
     float: right;
 }
 
-#next:hover, #prev:hover {
+.button:hover {
     color: #f85b1c;
     border-color: #f85b1c;
 }
@@ -109,6 +109,9 @@
     line-height: 30px;
     display: none;
     min-height: 400px;
+    background: rgb(224, 224, 224, 0.9);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
 }
 
 .slide h2 {  
@@ -140,17 +143,17 @@
     padding: 20px;
 }
 
-.slide ul {
+.ulS {
     list-style: none;
     font-size: 20px;
     padding: 5px 20px 5px 50px;
 }
 
-.slide li {
+.ulS li {
     padding: 5px 0;
 }
 
-.slide li::before {
+.ulS li::before {
     font-family: 'Righteous';
     content: "\003E";  /* unicode for ">" */
     color: #f85b1c; 
@@ -163,31 +166,54 @@
 
 
 
+
 #slide7 {
     height: 500px;
 }
 
-#starten{
-  padding: 10px;
-  width: 646px;
-  height: 300px;
-  border: 2px solid black;
+#quiz {
+    display: none;
+
 }
 
-
-#last1{
-  position: absolute;
-  margin-top: 50px;
+.button.active {
+    background-color: #F8F8FF;
+    color: #525252;
 }
 
-#next1{
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 485px;
+#controlsQ {
+    padding: 10px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
 }
 
-#ferdig{
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 300px;
+#nextQ {
+    float: right;
+}
+
+#quiz {
+    width: 100%;
+    padding: 5px 20px;
+}
+
+#slide7 ul {
+    padding: 5px 20px;
+}
+
+#slide7 ul li {
+    list-style: none;
+}
+
+#slide7 input {
+    margin: 10px;
+}
+
+#prevQ, #start {
+    display: none;
+}
+
+#start {
+    font-size: 20px;
+    margin: auto;
 }
