@@ -1,9 +1,11 @@
+#kurs {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0 0;
+}
 
 #progressbarContainer {
     display: grid;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 5px 5px 0 0;
 }
 
 #emptyProgressbar {
@@ -55,8 +57,10 @@
 
 #controls {
     padding: 10px;
+    display: block;
+    height: 70px;
     background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 10px 10px;
 }
 
 .button {
@@ -109,9 +113,10 @@
     line-height: 30px;
     display: none;
     min-height: 400px;
-    background: rgb(224, 224, 224, 0.9);
+    background: rgb(224, 224, 224);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+    padding-bottom: 20px;
 }
 
 .slide h2 {  
@@ -119,7 +124,11 @@
 }
 
 .slide p {
-    padding: 5px 20px;
+    padding: 10px 30px;
+}
+
+.slide img {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
 #slide2 img {
@@ -133,20 +142,20 @@
     max-width: 400px;
     width: 100%;
     float: right;
-    padding: 20px;
+    margin: 30px;
 }
 
 #slide6 img {
     max-width: 550px;
     width: 100%;
     float: right;
-    padding: 20px;
+    margin: 30px;
 }
 
 .ulS {
     list-style: none;
     font-size: 20px;
-    padding: 5px 20px 5px 50px;
+    padding: 10px 30px 10px 60px;
 }
 
 .ulS li {
@@ -171,11 +180,6 @@
     height: 500px;
 }
 
-#quiz {
-    display: none;
-
-}
-
 .button.active {
     background-color: #F8F8FF;
     color: #525252;
@@ -184,7 +188,7 @@
 #controlsQ {
     padding: 10px;
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -195,6 +199,7 @@
 #quiz {
     width: 100%;
     padding: 5px 20px;
+    display: none;
 }
 
 #slide7 ul {
