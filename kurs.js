@@ -102,7 +102,7 @@ function changeSlide(active, newActive) {
 
     // avoid overlap. remove class completed from active
     if(newActiveStep.classList.contains("completeStep")) {
-        newActiveStep.classList.remove("completeStep")
+        newActiveStep.classList.remove("completeStep");
     }
 
     // when no longer active, add class completed
